@@ -66,6 +66,33 @@
             <p class="fs-3 pb-4" id="result" style="font-weight: 500;"></p>
 
         </div>
+
+
+         <!-- BT2 -->
+         <div class="my-5 rounded-3" style="background-image: url(./img/bg-bt1.jpg);">
+            <h2 class="mb-5 pt-4">Bài tập 1</h2>
+            
+            <div class="col-sm-12 d-flex mb-5 justify-content-center">
+                <div class=" col-4 px-3 text-center">
+                    <label class="form-label" for="userName">Tên khách hàng</label>
+                    <input type="text" class="w-100 rounded-3 form control" id="userName">
+                </div>               
+            </div>
+            <div class="col-sm-12 d-flex mb-5 justify-content-center">
+                <div class=" col-4 px-3">
+                    <label class="form-label" for="kwNumber">Số Kw tiêu thụ</label>
+                    <input type="number" class="w-100 rounded-3 form control" id="kwNumber">
+                </div>
+                
+            </div>
+            <div class="text-center mt-4 mb-4">
+                <button onclick="
+                electricBill()" class="btn btn-success">Thành Tiền</button>
+            </div>
+            <p class="fs-3 pb-2" id="customer" style="font-weight: 500;">Khách Hàng : </p>
+            <p class="fs-3 pb-4" id="paying" style="font-weight: 500;">Tổng Tiền : </p>
+
+        </div>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -75,6 +102,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="./BT1_StudentManagement.js"></script>
+    <script src="./BT2_ElectricBill.js"></script>
 </body>
 
 </html>
