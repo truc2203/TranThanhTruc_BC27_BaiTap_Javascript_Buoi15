@@ -58,7 +58,6 @@ function priority(priArea,priObj)
 {
     var areaPoint = 0
     var objPoint = 0
-    var priTotal = 0
     if(priArea === "A")
     {
         areaPoint += 2
@@ -92,7 +91,7 @@ function priority(priArea,priObj)
     {
         objPoint = 0
     }
-    return priTotal = areaPoint + objPoint
+    return areaPoint + objPoint
 
 }
 
