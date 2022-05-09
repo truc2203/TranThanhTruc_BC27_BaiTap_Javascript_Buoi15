@@ -34,22 +34,20 @@ function studentManagement()
 //Hàm tính tổng điểm 
 function totalPoint(firstSub, secondSub,thirdSub)
 {
-    var total = firstSub + secondSub + thirdSub
-    return total
+    return firstSub + secondSub + thirdSub
 }
 
 
 // Hàm kiểm tra rớt nếu có 1 trong 3 môn 0đ
 function checkPoint(firstSub,secondSub,thirdSub)
 {
-    var check = 0
+
     if(firstSub > 0 && secondSub > 0 && thirdSub > 0)
     {
-        check += 1
-        return check
+        return 1
     }
     else{
-        return check
+        return 0
     }
 }
 
