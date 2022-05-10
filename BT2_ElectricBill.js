@@ -5,6 +5,7 @@ function electricBill()
     var customer = document.getElementById("customer")
     var paying = document.getElementById("paying")
 
+    // Biến hứng giá trị tiền điện
     var totalPay = calcKW(kwNumber,500,650,850,1100,1300).toLocaleString()
 
     customer.innerHTML = `Tên khách hàng : ${userName}`
@@ -12,6 +13,7 @@ function electricBill()
 
 }
 
+// Hàm tính tiền điện
 function calcKW(kwNumber,kw_1_50,kw_50_100,kw_100_200,kw_200_350, kws)
 {
     var total = 0
